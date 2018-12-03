@@ -21,13 +21,4 @@ public class AdventOfCodeException extends RuntimeException
     {
         super ( cause );
     }
-
-    protected AdventOfCodeException (
-            final String message,
-            final Throwable cause,
-            final boolean enableSuppression,
-            final boolean writableStackTrace )
-    {
-        super ( message, cause, enableSuppression, writableStackTrace );
-    }
 }
