@@ -1,6 +1,7 @@
 package com.laranyman.eighteen.dayfour;
 
 import com.google.common.collect.Maps;
+import com.laranyman.util.AdventOfCodeUtil;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -27,7 +28,7 @@ public class DayFour
 
         final Guard mostAsleep = sortedGuards.get ( sortedGuards.size ( ) - 1 );
 
-        final int mode = mode ( mostAsleep.getMinutesAsleep ( ) );
+        final int mode = AdventOfCodeUtil.mode ( mostAsleep.getMinutesAsleep ( ) );
 
         return mostAsleep.getId ( ) * mode;
 
@@ -41,39 +42,14 @@ public class DayFour
 
         final List< Guard > sortedGuards = guards.values ( )
                 .stream ( )
-                .sorted ( Comparator.comparingInt ( e -> mode ( e.getMinutesAsleep ( ) ) ) )
+                .sorted ( Comparator.comparingInt ( e -> AdventOfCodeUtil.mode ( e.getMinutesAsleep ( ) ) ) )
                 .collect ( Collectors.toList ( ) );
 
         final Guard mostAsleep = sortedGuards.get ( sortedGuards.size ( ) - 1 );
 
-        final int mode = mode ( mostAsleep.getMinutesAsleep ( ) );
+        final int mode = AdventOfCodeUtil.mode ( mostAsleep.getMinutesAsleep ( ) );
 
         return mostAsleep.getId ( ) * mode;
-    }
-
-    private static int mode ( final List< Integer > a )
-    {
-        int maxValue = 0;
-        int maxCount = 0;
-
-        for ( int i = 0; i < a.size ( ); ++i )
-        {
-            int count = 0;
-            for ( int integer : a )
-            {
-                if ( integer == a.get ( i ) )
-                {
-                    ++count;
-                }
-            }
-            if ( count > maxCount )
-            {
-                maxCount = count;
-                maxValue = a.get ( i );
-            }
-        }
-
-        return maxValue;
     }
 
     private static Map< Integer, Guard > sortGuards ( final List< Event > sortedEvents )
