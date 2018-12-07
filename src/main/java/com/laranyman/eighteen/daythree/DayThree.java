@@ -3,6 +3,7 @@ package com.laranyman.eighteen.daythree;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import com.laranyman.eighteen.exceptions.AdventOfCodeException;
+import com.laranyman.util.Coordinate;
 
 import java.util.Arrays;
 import java.util.List;

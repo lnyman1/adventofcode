@@ -27,13 +27,13 @@ public class DayNTest
     public void testPartOneActual ( )
     {
         String input = "";
-        System.out.println ( "Part One Answer" + DayN.partOne (input));
+        System.out.println ( "Part One Answer " + DayN.partOne (input));
     }
 
     @Test
     public void testPartTwoActual ( )
     {
         String input = "";
-        System.out.println ( "Part Two Answer" + DayN.partTwo (input));
+        System.out.println ( "Part Two Answer " + DayN.partTwo (input));
     }
 }

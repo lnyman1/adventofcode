@@ -1,4 +1,4 @@
-package com.laranyman.eighteen.daythree;
+package com.laranyman.util;
 
 import java.util.Objects;
 
