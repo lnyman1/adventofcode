@@ -13,27 +13,15 @@ public class DayNTest
     public void testPartOneExampleOne ( )
     {
         String input = "";
-        assertEquals(3, DayN.partOne ( input ));
+        DayN dayN = new DayN ( );
+        assertEquals ( 0, dayN.partOne ( input ) );
     }
 
     @Test
     public void testPartTwoExampleOne ( )
     {
         String input = "";
-        assertEquals(3, DayN.partTwo (input));
-    }
-
-    @Test
-    public void testPartOneActual ( )
-    {
-        String input = "";
-        System.out.println ( "Part One Answer " + DayN.partOne (input));
-    }
-
-    @Test
-    public void testPartTwoActual ( )
-    {
-        String input = "";
-        System.out.println ( "Part Two Answer " + DayN.partTwo (input));
+        DayN dayN = new DayN ( );
+        assertEquals ( 0, dayN.partTwo ( input ) );
     }
 }

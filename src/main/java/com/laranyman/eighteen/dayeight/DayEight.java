@@ -1,6 +1,7 @@
 package com.laranyman.eighteen.dayeight;
 
 import com.google.common.collect.Lists;
+import com.laranyman.eighteen.DayIfc;
 
 import java.util.Arrays;
 import java.util.Collection;
@@ -12,9 +13,10 @@ import java.util.stream.Collectors;
 /**
  * @author Lara
  */
-public class DayEight
+public class DayEight implements DayIfc
 {
-    public static int partOne ( final String input )
+    @Override
+    public String partOne ( final String input )
     {
         final Queue< Integer > licenseFile = parseInput ( input );
 
@@ -25,10 +27,11 @@ public class DayEight
             nodes.add ( createTree ( licenseFile ) );
         }
 
-        return sumMetaData ( nodes );
+        return String.valueOf ( sumMetaData ( nodes ) );
     }
 
-    public static int partTwo ( final String input )
+    @Override
+    public String partTwo ( final String input )
     {
         final Queue< Integer > licenseFile = parseInput ( input );
 
@@ -39,7 +42,7 @@ public class DayEight
             nodes.add ( createTree ( licenseFile ) );
         }
 
-        return sumOfIndexes ( nodes );
+        return String.valueOf ( sumOfIndexes ( nodes ) );
     }
 
     private static int sumOfIndexes ( final List< Node > nodes )

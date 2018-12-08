@@ -2,6 +2,7 @@ package com.laranyman.eighteen.dayfive;
 
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
+import com.laranyman.eighteen.DayIfc;
 
 import java.util.Comparator;
 import java.util.List;
@@ -11,16 +12,18 @@ import java.util.stream.Collectors;
 /**
  * @author Lara
  */
-public class DayFive
+public class DayFive implements DayIfc
 {
-    public static int partOne ( final String input )
+    @Override
+    public String partOne ( final String input )
     {
         List< String > forbiddenStrings = getForbiddenPatterns ( );
         final String result = replaceAll ( input, forbiddenStrings );
-        return result.length ( );
+        return String.valueOf ( result.length ( ) );
     }
 
-    public static int partTwo ( final String input )
+    @Override
+    public String partTwo ( final String input )
     {
         List< String > forbiddenStrings = getForbiddenPatterns ( );
 
@@ -41,7 +44,7 @@ public class DayFive
                 .sorted ( Comparator.naturalOrder ( ) )
                 .collect ( Collectors.toList ( ) );
 
-        return lowestValue.get ( 0 );
+        return String.valueOf ( lowestValue.get ( 0 ) );
     }
 
     private static List< String > getForbiddenPatterns ( )

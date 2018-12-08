@@ -2,6 +2,7 @@ package com.laranyman.eighteen.daythree;
 
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
+import com.laranyman.eighteen.DayIfc;
 import com.laranyman.eighteen.exceptions.AdventOfCodeException;
 import com.laranyman.util.Coordinate;
 
@@ -12,20 +13,23 @@ import java.util.Map;
 /**
  * @author Lara
  */
-public class DayThree
+public class DayThree implements DayIfc
 {
-    public static int partOne ( final String input )
+    @Override
+    public String partOne ( final String input )
     {
         final Claim[] claims = parseInput ( input );
 
         Map< Coordinate, Integer > coordinateIntegerMap = getCoordinatesPartOne ( claims );
 
-        return ( int ) coordinateIntegerMap.values ( ).stream ( )
+        return String.valueOf ( coordinateIntegerMap.values ( )
+                .stream ( )
                 .filter ( e -> e > 1 )
-                .count ( );
+                .count ( ) );
     }
 
-    public static String partTwo ( final String input )
+    @Override
+    public String partTwo ( final String input )
     {
         final Claim[] claims = parseInput ( input );
 

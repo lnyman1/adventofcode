@@ -15,6 +15,7 @@ Advent of Code
 *   **Day 6 :** *([code][18d6c])* *([tests][18d6t])*
 *   **Day 7 :** *([code][18d7c])* *([tests][18d7t])*
 *   **Day 8 :** *([code][18d8c])* *([tests][18d8t])*
+*   **Day 9 :** *([code][18d9c])* *([tests][18d9t])*
 
 [18d1c]: src/main/java/com/laranyman/eighteen/dayone/DayOne.java
 [18d2c]: src/main/java/com/laranyman/eighteen/daytwo/DayTwo.java
@@ -24,6 +25,7 @@ Advent of Code
 [18d6c]: src/main/java/com/laranyman/eighteen/daysix/DaySix.java
 [18d7c]: src/main/java/com/laranyman/eighteen/dayseven/DaySeven.java
 [18d8c]: src/main/java/com/laranyman/eighteen/dayeight/DayEight.java
+[18d9c]: src/main/java/com/laranyman/eighteen/daynine/DayNine.java
 
 [18d1t]: src/test/java/com/laranyman/eighteen/dayone/DayOneTest.java
 [18d2t]: src/test/java/com/laranyman/eighteen/daytwo/DayTwoTest.java
@@ -33,3 +35,4 @@ Advent of Code
 [18d6t]: src/test/java/com/laranyman/eighteen/daysix/DaySixTest.java
 [18d7t]: src/test/java/com/laranyman/eighteen/dayseven/DaySevenTest.java
 [18d8t]: src/test/java/com/laranyman/eighteen/dayeight/DayEightTest.java
+[18d9t]: src/test/java/com/laranyman/eighteen/daynine/DayNineTest.java

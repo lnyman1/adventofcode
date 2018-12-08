@@ -1,6 +1,7 @@
 package com.laranyman.eighteen.dayone;
 
 import com.google.common.collect.Lists;
+import com.laranyman.eighteen.DayIfc;
 
 import java.util.Arrays;
 import java.util.List;
@@ -8,9 +9,10 @@ import java.util.List;
 /**
  * @author Lara
  */
-public final class DayOne
+public class DayOne implements DayIfc
 {
-    public static int partOne ( final String input )
+    @Override
+    public String partOne ( final String input )
     {
         int[] numbers = createArray ( input );
 
@@ -21,23 +23,24 @@ public final class DayOne
             sum += num;
         }
 
-        return sum;
+        return String.valueOf ( sum );
     }
 
-    public static int partTwo ( final String input )
+    @Override
+    public String partTwo ( final String input )
     {
         List< Integer > knownFrequencies = Lists.newArrayList ( );
         knownFrequencies.add ( 0 );
 
         int[] numbers = createArray ( input );
 
-        return repeat ( numbers, knownFrequencies, 0 );
+        return String.valueOf ( repeat ( numbers, knownFrequencies, 0 ) );
     }
 
-    private static int repeat(
-            final int [] numbers,
-            final List<Integer> knownFrequencies,
-            final int sum)
+    private static int repeat (
+            final int[] numbers,
+            final List< Integer > knownFrequencies,
+            final int sum )
     {
         int total = sum;
 

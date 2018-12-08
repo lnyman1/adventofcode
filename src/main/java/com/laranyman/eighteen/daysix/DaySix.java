@@ -1,6 +1,7 @@
 package com.laranyman.eighteen.daysix;
 
 import com.google.common.collect.Maps;
+import com.laranyman.eighteen.DayIfc;
 import com.laranyman.eighteen.dayfour.Guard;
 import com.laranyman.util.AdventOfCodeUtil;
 import com.laranyman.util.Coordinate;
@@ -18,9 +19,10 @@ import static com.laranyman.util.AdventOfCodeUtil.splitInput;
 /**
  * @author Lara
  */
-public class DaySix
+public class DaySix implements DayIfc
 {
-    public static int partOne ( final String input )
+    @Override
+    public String partOne ( final String input )
     {
         final Coordinate[] coordinates = parseInput ( input );
 
@@ -82,14 +84,17 @@ public class DaySix
             regions.remove ( grid[ maxX ][ y ] );
         }
 
-        return regions.values ( )
+        return String.valueOf ( regions.values ( )
                 .stream ( )
                 .max ( Comparator.naturalOrder ( ) )
-                .get ( );
+                .get ( ) );
     }
 
-    public static int partTwo ( final String input, final int magicNumber )
+    @Override
+    public String partTwo ( final String input, final int... numbers )
     {
+        final int magicNumber = numbers[ 0 ];
+
         final Coordinate[] coordinates = parseInput ( input );
 
         Map< Integer, Coordinate > coordinateMap = IntStream.range ( 0, coordinates.length )
@@ -172,7 +177,7 @@ public class DaySix
             }
         }
 
-        return region;
+        return String.valueOf ( region );
     }
 
 

@@ -1,6 +1,7 @@
 package com.laranyman.eighteen.dayfour;
 
 import com.google.common.collect.Maps;
+import com.laranyman.eighteen.DayIfc;
 import com.laranyman.util.AdventOfCodeUtil;
 
 import java.util.ArrayList;
@@ -13,9 +14,10 @@ import java.util.stream.Collectors;
 /**
  * @author Lara
  */
-public class DayFour
+public class DayFour implements DayIfc
 {
-    public static int partOne ( final String input )
+    @Override
+    public String partOne ( final String input )
     {
         final List< Event > sortedEvents = parseInput ( input );
 
@@ -30,11 +32,12 @@ public class DayFour
 
         final int mode = AdventOfCodeUtil.mode ( mostAsleep.getMinutesAsleep ( ) );
 
-        return mostAsleep.getId ( ) * mode;
+        return String.valueOf ( mostAsleep.getId ( ) * mode );
 
     }
 
-    public static int partTwo ( final String input )
+    @Override
+    public String partTwo ( final String input )
     {
         final List< Event > sortedEvents = parseInput ( input );
 
@@ -49,7 +52,7 @@ public class DayFour
 
         final int mode = AdventOfCodeUtil.mode ( mostAsleep.getMinutesAsleep ( ) );
 
-        return mostAsleep.getId ( ) * mode;
+        return String.valueOf ( mostAsleep.getId ( ) * mode );
     }
 
     private static Map< Integer, Guard > sortGuards ( final List< Event > sortedEvents )

@@ -3,6 +3,7 @@ package com.laranyman.eighteen.dayseven;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import com.google.common.collect.Sets;
+import com.laranyman.eighteen.DayIfc;
 
 import java.util.Arrays;
 import java.util.Comparator;
@@ -16,9 +17,10 @@ import static com.laranyman.util.AdventOfCodeUtil.splitInput;
 /**
  * @author Lara
  */
-public class DaySeven
+public class DaySeven implements DayIfc
 {
-    public static String partOne ( final String input )
+    @Override
+    public String partOne ( final String input )
     {
         final List< Instruction > instructions = parseInput ( input );
 
@@ -66,8 +68,12 @@ public class DaySeven
                 .collect ( Collectors.joining ( "" ) );
     }
 
-    public static int partTwo ( final String input, final int numberOfWorkers, final int stepDuration )
+    @Override
+    public String partTwo ( final String input, final int... numbers )
     {
+        int numberOfWorkers = numbers[ 0 ];
+        int stepDuration = numbers[ 1 ];
+
         final List< Instruction > instructions = parseInput ( input );
 
         Map< Character, List< Character > > dependents = Maps.newHashMap ( );
@@ -140,7 +146,7 @@ public class DaySeven
             durationPerJob.keySet ( ).removeAll ( jobsDone );
         }
 
-        return duration;
+        return String.valueOf ( duration );
     }
 
     private static int calculateDuration ( final Character character, final int stepDuration )

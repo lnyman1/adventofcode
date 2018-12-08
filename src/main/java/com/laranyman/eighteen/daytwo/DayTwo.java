@@ -2,6 +2,7 @@ package com.laranyman.eighteen.daytwo;
 
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
+import com.laranyman.eighteen.DayIfc;
 import com.laranyman.eighteen.exceptions.AdventOfCodeException;
 
 import java.util.List;
@@ -10,9 +11,10 @@ import java.util.Map;
 /**
  * @author Lara
  */
-public class DayTwo
+public class DayTwo implements DayIfc
 {
-    public static int checksumPartOne ( final String input )
+    @Override
+    public String partOne ( final String input )
     {
         final String[] arr = createArray ( input );
 
@@ -52,10 +54,11 @@ public class DayTwo
             }
         }
 
-        return twoTimes * threeTimes;
+        return String.valueOf ( twoTimes * threeTimes );
     }
 
-    public static String checksumPartTwo ( final String input )
+    @Override
+    public String partTwo ( final String input )
     {
         String[] arr = createArray ( input );
 
@@ -69,8 +72,8 @@ public class DayTwo
 
                 for ( int i = 0; i < listEntry.length ( ); i++ )
                 {
-                     char characterInList = listEntry.charAt ( i );
-                     char characterInEntry = entry.charAt ( i );
+                    char characterInList = listEntry.charAt ( i );
+                    char characterInEntry = entry.charAt ( i );
 
                     if ( characterInList != characterInEntry )
                     {
