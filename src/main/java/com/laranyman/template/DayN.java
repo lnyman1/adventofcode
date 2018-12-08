@@ -21,6 +21,6 @@ public class DayN
 
     private static String[] parseInput ( final String input )
     {
-        return splitInput ( input );
+        return parseInput ( input );
     }
 }
