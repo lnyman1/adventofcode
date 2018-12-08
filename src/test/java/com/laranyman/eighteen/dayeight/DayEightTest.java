@@ -2,7 +2,7 @@ package com.laranyman.eighteen.dayeight;
 
 import org.junit.Test;
 
-import static com.laranyman.eighteen.TestUtil.assertEqual;
+import static com.laranyman.TestUtil.assertEqual;
 import static org.junit.Assert.assertEquals;
 
 /**

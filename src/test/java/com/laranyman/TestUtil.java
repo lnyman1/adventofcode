@@ -1,4 +1,4 @@
-package com.laranyman.eighteen;
+package com.laranyman;
 
 import static org.junit.Assert.assertEquals;
 

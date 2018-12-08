@@ -1,10 +1,9 @@
-package com.laranyman.eighteen;
+package com.laranyman;
 
-import com.google.common.collect.Maps;
+import com.laranyman.eighteen.DayIfc;
 import com.laranyman.eighteen.dayeight.DayEight;
 import com.laranyman.eighteen.dayfive.DayFive;
 import com.laranyman.eighteen.dayfour.DayFour;
-import com.laranyman.eighteen.daynine.DayNine;
 import com.laranyman.eighteen.dayone.DayOne;
 import com.laranyman.eighteen.dayseven.DaySeven;
 import com.laranyman.eighteen.daysix.DaySix;

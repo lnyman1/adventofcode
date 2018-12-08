@@ -1,10 +1,9 @@
 package com.laranyman.eighteen.dayone;
 
 import com.laranyman.eighteen.DayIfc;
-import com.laranyman.eighteen.TestUtil;
 import org.junit.Test;
 
-import static com.laranyman.eighteen.TestUtil.assertEqual;
+import static com.laranyman.TestUtil.assertEqual;
 import static org.junit.Assert.assertEquals;
 
 /**
