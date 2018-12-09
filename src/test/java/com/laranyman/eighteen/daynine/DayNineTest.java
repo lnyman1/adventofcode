@@ -57,41 +57,41 @@ public class DayNineTest
     public void testPartTwoExampleZero ( )
     {
         DayNine dayNine = new DayNine ( );
-        assertEqual ( 32, dayNine.partOne ( 9, 25 ) );
+        assertEqual ( 32, dayNine.partTwo ( 9, 25 ) );
     }
 
     @Test
     public void testPartTwoExampleOne ( )
     {
         DayNine dayNine = new DayNine ( );
-        assertEqual ( 8317, dayNine.partOne ( 10, 1618 ) );
+        assertEqual ( 8317, dayNine.partTwo ( 10, 1618 ) );
     }
 
     @Test
     public void testPartTwoExampleTwo ( )
     {
         DayNine dayNine = new DayNine ( );
-        assertEqual ( 146373, dayNine.partOne ( 13, 7999 ) );
+        assertEqual ( 146373, dayNine.partTwo ( 13, 7999 ) );
     }
 
     @Test
     public void testPartTwoExampleThree ( )
     {
         DayNine dayNine = new DayNine ( );
-        assertEqual ( 2764, dayNine.partOne ( 17, 1104 ) );
+        assertEqual ( 2764, dayNine.partTwo ( 17, 1104 ) );
     }
 
     @Test
     public void testPartTwoExampleFour ( )
     {
         DayNine dayNine = new DayNine ( );
-        assertEqual ( 54718, dayNine.partOne ( 21, 6111 ) );
+        assertEqual ( 54718, dayNine.partTwo ( 21, 6111 ) );
     }
 
     @Test
     public void testPartTwoExampleFive ( )
     {
         DayNine dayNine = new DayNine ( );
-        assertEqual ( 37305, dayNine.partOne ( 30, 5807 ) );
+        assertEqual ( 37305, dayNine.partTwo ( 30, 5807 ) );
     }
 }
