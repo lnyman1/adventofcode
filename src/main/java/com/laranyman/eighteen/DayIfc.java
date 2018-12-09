@@ -5,7 +5,15 @@ package com.laranyman.eighteen;
  */
 public interface DayIfc
 {
-    String partOne ( String input );
+    default String partOne ( String input )
+    {
+        return null;
+    }
+
+    default String partOne ( int ... input )
+    {
+        return null;
+    }
 
     default String partTwo ( String input )
     {
@@ -13,6 +21,11 @@ public interface DayIfc
     }
 
     default String partTwo ( String input, int... numbers )
+    {
+        return null;
+    }
+
+    default String partTwo ( int... numbers )
     {
         return null;
     }
