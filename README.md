@@ -27,7 +27,7 @@ Advent of Code
 [18d7c]: src/main/java/com/laranyman/eighteen/dayseven/DaySeven.java
 [18d8c]: src/main/java/com/laranyman/eighteen/dayeight/DayEight.java
 [18d9c]: src/main/java/com/laranyman/eighteen/daynine/DayNine.java
-[18d9c]: src/main/java/com/laranyman/eighteen/dayten/DayTen.java
+[18d10c]: src/main/java/com/laranyman/eighteen/dayten/DayTen.java
 
 [18d1t]: src/test/java/com/laranyman/eighteen/dayone/DayOneTest.java
 [18d2t]: src/test/java/com/laranyman/eighteen/daytwo/DayTwoTest.java
