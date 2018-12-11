@@ -3,6 +3,7 @@ package com.laranyman;
 import com.google.common.collect.Lists;
 import com.laranyman.eighteen.DayIfc;
 import com.laranyman.eighteen.dayeight.DayEight;
+import com.laranyman.eighteen.dayeleven.DayEleven;
 import com.laranyman.eighteen.dayfive.DayFive;
 import com.laranyman.eighteen.dayfour.DayFour;
 import com.laranyman.eighteen.daynine.DayNine;
@@ -52,16 +53,17 @@ public class AnswerRunner
         dayNine.add ( new int[] { 459, 71790 } );
         dayNine.add ( new int[] { 459, 7179000 } );
 
-        m_days.put ( new DayOne ( ), emptyParameters ( ) );
-        m_days.put ( new DayTwo ( ), emptyParameters ( ) );
-        m_days.put ( new DayThree ( ), emptyParameters ( ) );
-        m_days.put ( new DayFour ( ), emptyParameters ( ) );
-        m_days.put ( new DayFive ( ), emptyParameters ( ) );
-        m_days.put ( new DaySix ( ), daySix );
-        m_days.put ( new DaySeven ( ), daySeven );
-        m_days.put ( new DayEight ( ), emptyParameters ( ) );
-        m_days.put ( new DayNine ( ), dayNine );
-        m_days.put ( new DayTen ( ), emptyParameters ( ) );
+//        m_days.put ( new DayOne ( ), emptyParameters ( ) );
+//        m_days.put ( new DayTwo ( ), emptyParameters ( ) );
+//        m_days.put ( new DayThree ( ), emptyParameters ( ) );
+//        m_days.put ( new DayFour ( ), emptyParameters ( ) );
+//        m_days.put ( new DayFive ( ), emptyParameters ( ) );
+//        m_days.put ( new DaySix ( ), daySix );
+//        m_days.put ( new DaySeven ( ), daySeven );
+//        m_days.put ( new DayEight ( ), emptyParameters ( ) );
+//        m_days.put ( new DayNine ( ), dayNine );
+//        m_days.put ( new DayTen ( ), emptyParameters ( ) );
+        m_days.put ( new DayEleven ( ), emptyParameters ( ) );
     }
 
     public static void main ( String[] args ) throws IOException

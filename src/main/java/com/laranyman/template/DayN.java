@@ -12,19 +12,19 @@ public class DayN implements DayIfc
     @Override
     public String partOne ( final String input )
     {
-        splitInput ( input );
+        parseInput ( input );
         return null;
     }
 
     @Override
     public String partTwo ( final String input )
     {
-        splitInput ( input );
+        parseInput ( input );
         return null;
     }
 
     private static String[] parseInput ( final String input )
     {
-        return parseInput ( input );
+        return splitInput ( input );
     }
 }
