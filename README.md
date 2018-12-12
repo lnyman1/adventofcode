@@ -7,19 +7,19 @@ Advent of Code
 ----
 
 
-*   **Day 1 :** *([code][18d1c])* *([tests][18d1t])*
-*   **Day 2 :** *([code][18d2c])* *([tests][18d2t])*
-*   **Day 3 :** *([code][18d3c])* *([tests][18d3t])*
-*   **Day 4 :** *([code][18d4c])* *([tests][18d4t])*
-*   **Day 5 :** *([code][18d5c])* *([tests][18d5t])*
-*   **Day 6 :** *([code][18d6c])* *([tests][18d6t])*
-*   **Day 7 :** *([code][18d7c])* *([tests][18d7t])*
-*   **Day 8 :** *([code][18d8c])* *([tests][18d8t])*
-*   **Day 9 :** *([code][18d9c])* *([tests][18d9t])*
-*   **Day 10 :** *([code][18d10c])* *([tests][18d10t])*
-*   **Day 11 :** *([code][18d11c])* *([tests][18d11t])*
-*   **Day 12 :** *([code][18d12c])* *([tests][18d12t])*
-*   **Day 13 :** *([code][18d13c])* *([tests][18d13t])*
+*   **Day 1** - Chronal Calibration :           *([code][18d1c])* *([tests][18d1t])*
+*   **Day 2** - Inventory Management System :   *([code][18d2c])* *([tests][18d2t])*
+*   **Day 3** - No Matter How You Slice It :    *([code][18d3c])* *([tests][18d3t])*
+*   **Day 4** - Repose Record :                 *([code][18d4c])* *([tests][18d4t])*
+*   **Day 5** - Alchemical Reduction :          *([code][18d5c])* *([tests][18d5t])*
+*   **Day 6** - Chronal Coordinates :           *([code][18d6c])* *([tests][18d6t])*
+*   **Day 7** - The Sum of Its Parts :          *([code][18d7c])* *([tests][18d7t])*
+*   **Day 8** - Memory Maneuver :               *([code][18d8c])* *([tests][18d8t])*
+*   **Day 9** - Marble Mania :                  *([code][18d9c])* *([tests][18d9t])*
+*   **Day 10** - The Stars Align :              *([code][18d10c])* *([tests][18d10t])*
+*   **Day 11** - Chronal Charge :               *([code][18d11c])* *([tests][18d11t])*
+*   **Day 12** - Subterranean Sustainability :  *([code][18d12c])* *([tests][18d12t])*
+*   **Day 13** -                                *([code][18d13c])* *([tests][18d13t])*
 
 [18d1c]: src/main/java/com/laranyman/aoc/eighteen/dayone/DayOne.java
 [18d2c]: src/main/java/com/laranyman/aoc/eighteen/daytwo/DayTwo.java
