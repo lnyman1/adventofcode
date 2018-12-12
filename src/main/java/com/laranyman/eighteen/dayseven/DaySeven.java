@@ -69,10 +69,10 @@ public class DaySeven implements DayIfc
     }
 
     @Override
-    public String partTwo ( final String input, final int... numbers )
+    public String partTwo ( final String input, final long... numbers )
     {
-        int numberOfWorkers = numbers[ 0 ];
-        int stepDuration = numbers[ 1 ];
+        int numberOfWorkers = (int) numbers[ 0 ];
+        int stepDuration = (int) numbers[ 1 ];
 
         final List< Instruction > instructions = parseInput ( input );
 

@@ -12,6 +12,7 @@ import com.laranyman.eighteen.dayseven.DaySeven;
 import com.laranyman.eighteen.daysix.DaySix;
 import com.laranyman.eighteen.dayten.DayTen;
 import com.laranyman.eighteen.daythree.DayThree;
+import com.laranyman.eighteen.daytwelve.DayTwelve;
 import com.laranyman.eighteen.daytwo.DayTwo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -37,21 +38,25 @@ public class AnswerRunner
 
     private static final String s_printLineFormat = "%10s %30s %30s";
 
-    private final Map< DayIfc, List< int[] > > m_days;
+    private final Map< DayIfc, List< long[] > > m_days;
 
     public AnswerRunner ( )
     {
         m_days = new LinkedHashMap<> ( );
 
-        List< int[] > daySix = emptyParameters ( );
-        daySix.add ( 1, new int[] { 10000 } );
+        List< long[] > daySix = emptyParameters ( );
+        daySix.add ( 1, new long[] { 10000 } );
 
-        List< int[] > daySeven = emptyParameters ( );
-        daySix.add ( 1, new int[] { 5, 60 } );
+        List< long[] > daySeven = emptyParameters ( );
+        daySix.add ( 1, new long[] { 5, 60 } );
 
-        List< int[] > dayNine = Lists.newArrayList ( );
-        dayNine.add ( new int[] { 459, 71790 } );
-        dayNine.add ( new int[] { 459, 7179000 } );
+        List< long[] > dayNine = Lists.newArrayList ( );
+        dayNine.add ( new long[] { 459, 71790 } );
+        dayNine.add ( new long[] { 459, 7179000 } );
+
+        List< long[] > dayTwelve = Lists.newArrayList ( );
+        dayTwelve.add ( new long[] { 20 } );
+        dayTwelve.add ( new long[] { 50000000000L } );
 
 //        m_days.put ( new DayOne ( ), emptyParameters ( ) );
 //        m_days.put ( new DayTwo ( ), emptyParameters ( ) );
@@ -63,7 +68,8 @@ public class AnswerRunner
 //        m_days.put ( new DayEight ( ), emptyParameters ( ) );
 //        m_days.put ( new DayNine ( ), dayNine );
 //        m_days.put ( new DayTen ( ), emptyParameters ( ) );
-        m_days.put ( new DayEleven ( ), emptyParameters ( ) );
+//        m_days.put ( new DayEleven ( ), emptyParameters ( ) );
+        m_days.put ( new DayTwelve ( ), dayTwelve );
     }
 
     public static void main ( String[] args ) throws IOException
@@ -76,7 +82,7 @@ public class AnswerRunner
     {
         s_logger.info ( String.format ( s_printLineFormat, "Day", "PartOne", "PartTwo" ) );
 
-        for ( Map.Entry< DayIfc, List< int[] > > day : m_days.entrySet ( ) )
+        for ( Map.Entry< DayIfc, List< long[] > > day : m_days.entrySet ( ) )
         {
             final DayIfc dayInstance = day.getKey ( );
 
@@ -91,7 +97,9 @@ public class AnswerRunner
 
             final String partOneAnswer = day.getValue ( ).get ( 0 ).length == 0
                     ? dayInstance.partOne ( inputString )
-                    : dayInstance.partOne ( day.getValue ( ).get ( 0 ) );
+                    : inputString.equals ( "" )
+                    ? dayInstance.partOne ( day.getValue ( ).get ( 0 ) )
+                    : dayInstance.partOne ( inputString, day.getValue ( ).get ( 0 ) );
 
             final String partTwoAnswer = day.getValue ( ).get ( 1 ).length == 0
                     ? dayInstance.partTwo ( inputString )
@@ -111,11 +119,11 @@ public class AnswerRunner
         }
     }
 
-    private static List< int[] > emptyParameters ( )
+    private static List< long[] > emptyParameters ( )
     {
-        List< int[] > day = Lists.newArrayList ( );
-        day.add ( new int[] { } );
-        day.add ( new int[] { } );
+        List< long[] > day = Lists.newArrayList ( );
+        day.add ( new long[] { } );
+        day.add ( new long[] { } );
         return day;
     }
 }

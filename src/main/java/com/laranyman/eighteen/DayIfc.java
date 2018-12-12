@@ -10,7 +10,12 @@ public interface DayIfc
         return null;
     }
 
-    default String partOne ( int ... input )
+    default String partOne ( long... input )
+    {
+        return null;
+    }
+
+    default String partOne ( String input, long... numbers )
     {
         return null;
     }
@@ -20,12 +25,12 @@ public interface DayIfc
         return null;
     }
 
-    default String partTwo ( String input, int... numbers )
+    default String partTwo ( String input, long... numbers )
     {
         return null;
     }
 
-    default String partTwo ( int... numbers )
+    default String partTwo ( long... numbers )
     {
         return null;
     }

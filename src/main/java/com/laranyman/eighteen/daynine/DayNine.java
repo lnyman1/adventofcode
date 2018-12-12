@@ -16,14 +16,14 @@ import static com.laranyman.util.AdventOfCodeUtil.splitInput;
 public class DayNine implements DayIfc
 {
     @Override
-    public String partOne ( final int... numbers )
+    public String partOne ( final long... numbers )
     {
         List< Integer > marbles = new LinkedList<> ( );
 
         Map< Integer, Integer > playerScores = Maps.newHashMap ( );
 
-        final int numberOfPlayers = numbers[ 0 ];
-        final int lastMarbleValue = numbers[ 1 ];
+        final int numberOfPlayers = (int) numbers[ 0 ];
+        final int lastMarbleValue = (int) numbers[ 1 ];
 
         int playerNumber = 1;
         int currentMarbleIdx = 0;
@@ -75,14 +75,14 @@ public class DayNine implements DayIfc
     }
 
     @Override
-    public String partTwo ( final int... numbers )
+    public String partTwo ( final long... numbers )
     {
         LinkedList< Integer > marbles = new LinkedList<> ( );
 
         Map< Integer, Long > playerScores = Maps.newHashMap ( );
 
-        final int numberOfPlayers = numbers[ 0 ];
-        final int lastMarbleValue = numbers[ 1 ];
+        final int numberOfPlayers = (int) numbers[ 0 ];
+        final int lastMarbleValue = (int) numbers[ 1 ];
 
         int playerNumber = 0;
 

@@ -91,9 +91,9 @@ public class DaySix implements DayIfc
     }
 
     @Override
-    public String partTwo ( final String input, final int... numbers )
+    public String partTwo ( final String input, final long... numbers )
     {
-        final int magicNumber = numbers[ 0 ];
+        final long magicNumber = numbers[ 0 ];
 
         final Coordinate[] coordinates = parseInput ( input );
 
