@@ -4,7 +4,7 @@ import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import com.laranyman.aoc.DayIfc;
 import com.laranyman.aoc.util.Coordinate;
-import com.laranyman.aoc.eighteen.exceptions.AdventOfCodeException;
+import com.laranyman.aoc.exceptions.AdventOfCodeException;
 
 import java.util.Arrays;
 import java.util.List;

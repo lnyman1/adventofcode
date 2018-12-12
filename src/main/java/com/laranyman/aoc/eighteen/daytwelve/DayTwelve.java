@@ -2,7 +2,7 @@ package com.laranyman.aoc.eighteen.daytwelve;
 
 import com.google.common.collect.Maps;
 import com.laranyman.aoc.DayIfc;
-import com.laranyman.aoc.eighteen.exceptions.AdventOfCodeException;
+import com.laranyman.aoc.exceptions.AdventOfCodeException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

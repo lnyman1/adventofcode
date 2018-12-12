@@ -1,4 +1,4 @@
-package com.laranyman.aoc.eighteen.exceptions;
+package com.laranyman.aoc.exceptions;
 
 /**
  * @author Lara

@@ -3,7 +3,7 @@ package com.laranyman.aoc.eighteen.daytwo;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import com.laranyman.aoc.DayIfc;
-import com.laranyman.aoc.eighteen.exceptions.AdventOfCodeException;
+import com.laranyman.aoc.exceptions.AdventOfCodeException;
 
 import java.util.List;
 import java.util.Map;
