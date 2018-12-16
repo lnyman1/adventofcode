@@ -13,6 +13,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+import static com.laranyman.aoc.util.AdventOfCodeUtil.printGrid;
+
 /**
  * @author Lara
  */
@@ -74,7 +76,7 @@ public class DayTen implements DayIfc
             grid[ coordinate.getxCoordinate ( ) ][ coordinate.getyCoordinate ( ) ] = 1;
         }
 
-        printGrid ( grid, maxX, maxY );
+        printGrid ( grid );
 
         return null;
     }
@@ -143,23 +145,6 @@ public class DayTen implements DayIfc
         return maxX - minX + maxY - minY;
     }
 
-    private static void printGrid (
-            final int[][] grid,
-            final int maxX,
-            final int maxY )
-    {
-        for ( int i = 0; i <= maxY; i++ )
-        {
-            String line = "";
-
-            for ( int j = 0; j <= maxX; j++ )
-            {
-                line += grid[ j ][ i ] == 1 ? "#" : ".";
-            }
-
-            LOGGER.info ( line );
-        }
-    }
 
     private static Map< Coordinate, Coordinate > parseInput ( final String input )
     {

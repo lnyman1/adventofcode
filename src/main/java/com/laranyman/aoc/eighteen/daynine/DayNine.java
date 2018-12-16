@@ -8,6 +8,8 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
+import static com.laranyman.aoc.util.AdventOfCodeUtil.rotate;
+
 /**
  * @author Lara
  */
@@ -119,39 +121,6 @@ public class DayNine implements DayIfc
         return String.valueOf ( playerScores.values ( )
                 .stream ( )
                 .max ( Comparator.naturalOrder ( ) ).get ( ) );
-    }
-
-    private static void rotate (
-            final LinkedList< Integer > list,
-            final int number )
-    {
-        if ( number == 0 )
-        {
-            return;
-        }
-
-        if ( number > 0 )
-        {
-            int count = 0;
-            while ( count < number )
-            {
-                final Integer last = list.removeLast ( );
-                list.addFirst ( last );
-                count++;
-            }
-
-            return;
-        }
-
-        int count = 0;
-        while ( count < Math.abs ( number ) )
-        {
-            final Integer first = list.removeFirst ( );
-            list.addLast ( first );
-            count++;
-        }
-
-        return;
     }
 
     private static boolean isMultipleOf23 ( final int number )

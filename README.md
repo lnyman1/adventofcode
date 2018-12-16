@@ -19,7 +19,10 @@ Advent of Code
 *   **Day 10** - The Stars Align :              *([code][18d10c])* *([tests][18d10t])*
 *   **Day 11** - Chronal Charge :               *([code][18d11c])* *([tests][18d11t])*
 *   **Day 12** - Subterranean Sustainability :  *([code][18d12c])* *([tests][18d12t])*
-*   **Day 13** -                                *([code][18d13c])* *([tests][18d13t])*
+*   **Day 13** - Mine Cart Madness :            *([code][18d13c])* *([tests][18d13t])*
+*   **Day 14** - Chocolate Charts :             *([code][18d14c])* *([tests][18d14t])*
+*   **Day 15** - Beverage Bandits :             *([code][18d15c])* *([tests][18d15t])*
+*   **Day 16** - Chronal Classification :       *([code][18d16c])* *([tests][18d16t])*
 
 [18d1c]: src/main/java/com/laranyman/aoc/eighteen/dayone/DayOne.java
 [18d2c]: src/main/java/com/laranyman/aoc/eighteen/daytwo/DayTwo.java
@@ -34,6 +37,9 @@ Advent of Code
 [18d11c]: src/main/java/com/laranyman/aoc/eighteen/dayeleven/DayEleven.java
 [18d12c]: src/main/java/com/laranyman/aoc/eighteen/daytwelve/DayTwelve.java
 [18d13c]: src/main/java/com/laranyman/aoc/eighteen/daythirteen/DayThirteen.java
+[18d14c]: src/main/java/com/laranyman/aoc/eighteen/dayfourteen/DayFourteen.java
+[18d15c]: src/main/java/com/laranyman/aoc/eighteen/dayfifteen/DayFifteen.java
+[18d16c]: src/main/java/com/laranyman/aoc/eighteen/daysixteen/DaySixteen.java
 
 [18d1t]: src/test/java/com/laranyman/aoc/eighteen/dayone/DayOneTest.java
 [18d2t]: src/test/java/com/laranyman/aoc/eighteen/daytwo/DayTwoTest.java
@@ -48,3 +54,6 @@ Advent of Code
 [18d11t]: src/test/java/com/laranyman/aoc/eighteen/dayeleven/DayElevenTest.java
 [18d12t]: src/test/java/com/laranyman/aoc/eighteen/daytwelve/DayTwelveTest.java
 [18d13t]: src/test/java/com/laranyman/aoc/eighteen/daythirteen/DayThirteenTest.java
+[18d14t]: src/test/java/com/laranyman/aoc/eighteen/dayfourteen/DayFourteenTest.java
+[18d15t]: src/test/java/com/laranyman/aoc/eighteen/dayfifteen/DayFifteenTest.java
+[18d16t]: src/test/java/com/laranyman/aoc/eighteen/daysixteen/DaySixteenTest.java

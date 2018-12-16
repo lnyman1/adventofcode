@@ -12,16 +12,27 @@ public class DayThirteenTest
     @Test
     public void testPartOneExampleOne ( )
     {
-        String input = "";
+        String input = "/->-\\        \n" +
+                       "|   |  /----\\\n" +
+                       "| /-+--+-\\  |\n" +
+                       "| | |  | v  |\n" +
+                       "\\-+-/  \\-+--/\n" +
+                       "  \\------/   ";
         DayThirteen dayThirteen = new DayThirteen ( );
-        assertEquals ( 0, dayThirteen.partOne ( input ) );
+        assertEquals ( "7,3", dayThirteen.partOne ( input ) );
     }
 
     @Test
-    public void testPartTwoExampleOne ( )
+    public void testPartOneExampleTwo ( )
     {
-        String input = "";
+        String input = "/>-<\\  \n" +
+                       "|   |  \n" +
+                       "| /<+-\\\n" +
+                       "| | | v\n" +
+                       "\\>+</ |\n" +
+                       "  |   ^\n" +
+                       "  \\<->/";
         DayThirteen dayThirteen = new DayThirteen ( );
-        assertEquals ( 0, dayThirteen.partTwo ( input ) );
+        assertEquals ( "6,4", dayThirteen.partTwo ( input ) );
     }
 }

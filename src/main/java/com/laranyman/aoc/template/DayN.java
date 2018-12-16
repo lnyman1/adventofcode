@@ -1,6 +1,8 @@
 package com.laranyman.aoc.template;
 
 import com.laranyman.aoc.DayIfc;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import static com.laranyman.aoc.util.AdventOfCodeUtil.splitInput;
 
@@ -9,6 +11,8 @@ import static com.laranyman.aoc.util.AdventOfCodeUtil.splitInput;
  */
 public class DayN implements DayIfc
 {
+    private static final Logger LOGGER = LoggerFactory.getLogger ( DayN.class );
+
     @Override
     public String partOne ( final String input )
     {

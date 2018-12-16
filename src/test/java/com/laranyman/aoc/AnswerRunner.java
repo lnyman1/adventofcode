@@ -1,6 +1,10 @@
 package com.laranyman.aoc;
 
 import com.google.common.collect.Lists;
+import com.laranyman.aoc.eighteen.dayfifteen.DayFifteen;
+import com.laranyman.aoc.eighteen.dayfour.DayFour;
+import com.laranyman.aoc.eighteen.dayfourteen.DayFourteen;
+import com.laranyman.aoc.eighteen.daysixteen.DaySixteen;
 import com.laranyman.aoc.eighteen.daythirteen.DayThirteen;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -46,6 +50,9 @@ public class AnswerRunner
         dayTwelve.add ( new long[] { 20 } );
         dayTwelve.add ( new long[] { 50000000000L } );
 
+        List< long[] > dayFifteen = emptyParameters ( );
+        dayFifteen.add ( 1, new long[] { 15 } );
+
 //        m_days.put ( new DayOne ( ), emptyParameters ( ) );
 //        m_days.put ( new DayTwo ( ), emptyParameters ( ) );
 //        m_days.put ( new DayThree ( ), emptyParameters ( ) );
@@ -58,7 +65,10 @@ public class AnswerRunner
 //        m_days.put ( new DayTen ( ), emptyParameters ( ) );
 //        m_days.put ( new DayEleven ( ), emptyParameters ( ) );
 //        m_days.put ( new DayTwelve ( ), dayTwelve );
-        m_days.put ( new DayThirteen ( ), emptyParameters () );
+//        m_days.put ( new DayThirteen ( ), emptyParameters () );
+//        m_days.put ( new DayFourteen ( ), emptyParameters () );
+        m_days.put ( new DayFifteen ( ), dayFifteen );
+//        m_days.put ( new DaySixteen ( ), emptyParameters ( ) );
     }
 
     public static void main ( String[] args ) throws IOException

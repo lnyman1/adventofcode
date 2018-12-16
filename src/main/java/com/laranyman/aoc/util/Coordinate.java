@@ -1,5 +1,8 @@
 package com.laranyman.aoc.util;
 
+import com.google.common.collect.Lists;
+
+import java.util.List;
 import java.util.Objects;
 
 /**
@@ -8,11 +11,11 @@ import java.util.Objects;
 public class Coordinate
 {
     private final int m_xCoordinate;
-    
+
     private final int m_yCoordinate;
 
-    public Coordinate ( 
-            final int xCoordinate, 
+    public Coordinate (
+            final int xCoordinate,
             final int yCoordinate )
     {
         m_xCoordinate = xCoordinate;
@@ -27,6 +30,16 @@ public class Coordinate
     public int getyCoordinate ( )
     {
         return m_yCoordinate;
+    }
+
+    public List< Coordinate > getNeighbours ( )
+    {
+        List< Coordinate > coordinates = Lists.newArrayList ( );
+        coordinates.add ( new Coordinate ( m_xCoordinate, m_yCoordinate - 1 ) );
+        coordinates.add ( new Coordinate ( m_xCoordinate - 1, m_yCoordinate ) );
+        coordinates.add ( new Coordinate ( m_xCoordinate + 1, m_yCoordinate ) );
+        coordinates.add ( new Coordinate ( m_xCoordinate, m_yCoordinate + 1 ) );
+        return coordinates;
     }
 
     @Override
