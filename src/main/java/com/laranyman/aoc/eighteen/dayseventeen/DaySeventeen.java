@@ -99,7 +99,7 @@ public class DaySeventeen implements DayIfc
         return maxY;
     }
 
-    private static void startSpring ( final Map< Coordinate, Type > grid, final Coordinate startCoord )
+    static void startSpring ( final Map< Coordinate, Type > grid, final Coordinate startCoord )
     {
         final int maxY = getMaxY ( grid );
 
@@ -206,7 +206,7 @@ public class DaySeventeen implements DayIfc
         return grid.get ( coordinate ) == Type.Clay || grid.get ( coordinate ) == Type.SettledWater;
     }
 
-    private static Map< Coordinate, Type > parseInput ( final String input )
+    static Map< Coordinate, Type > parseInput ( final String input )
     {
         Map< Coordinate, Type > grid = Maps.newHashMap ( );
         grid.put ( new Coordinate ( 500, 0 ), Type.Spring );
@@ -337,7 +337,7 @@ public class DaySeventeen implements DayIfc
         LOGGER.info ( line );
     }
 
-    private static enum Type
+    static enum Type
     {
         Clay ( '#' ),
         Sand ( '.' ),
