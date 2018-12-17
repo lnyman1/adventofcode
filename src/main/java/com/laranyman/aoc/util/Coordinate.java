@@ -2,13 +2,14 @@ package com.laranyman.aoc.util;
 
 import com.google.common.collect.Lists;
 
+import java.util.Comparator;
 import java.util.List;
 import java.util.Objects;
 
 /**
  * @author Lara
  */
-public class Coordinate
+public class Coordinate implements Comparator< Coordinate >
 {
     private final int m_xCoordinate;
 
@@ -40,6 +41,37 @@ public class Coordinate
         coordinates.add ( new Coordinate ( m_xCoordinate + 1, m_yCoordinate ) );
         coordinates.add ( new Coordinate ( m_xCoordinate, m_yCoordinate + 1 ) );
         return coordinates;
+    }
+
+    public Coordinate getLeftCoordinate ( )
+    {
+        return new Coordinate ( m_xCoordinate - 1, m_yCoordinate );
+    }
+
+    public Coordinate getRightCoordinate ( )
+    {
+        return new Coordinate ( m_xCoordinate + 1, m_yCoordinate );
+    }
+
+    public Coordinate getUpCoordinate ( )
+    {
+        return new Coordinate ( m_xCoordinate, m_yCoordinate - 1 );
+    }
+
+    public Coordinate getDownCoordinate ( )
+    {
+        return new Coordinate ( m_xCoordinate, m_yCoordinate + 1 );
+    }
+
+    @Override
+    public int compare ( final Coordinate x1, final Coordinate x2 )
+    {
+        int result = Double.compare ( x1.getyCoordinate ( ), x2.getyCoordinate ( ) );
+        if ( result == 0 )
+        {
+            result = Double.compare ( x1.getxCoordinate ( ), x2.getxCoordinate ( ) );
+        }
+        return result;
     }
 
     @Override

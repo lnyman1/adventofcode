@@ -23,6 +23,7 @@ Advent of Code
 *   **Day 14** - Chocolate Charts :             *([code][18d14c])* *([tests][18d14t])*
 *   **Day 15** - Beverage Bandits :             *([code][18d15c])* *([tests][18d15t])*
 *   **Day 16** - Chronal Classification :       *([code][18d16c])* *([tests][18d16t])*
+*   **Day 17** - Reservoir Research :           *([code][18d17c])* *([tests][18d17t])*
 
 [18d1c]: src/main/java/com/laranyman/aoc/eighteen/dayone/DayOne.java
 [18d2c]: src/main/java/com/laranyman/aoc/eighteen/daytwo/DayTwo.java
@@ -40,6 +41,7 @@ Advent of Code
 [18d14c]: src/main/java/com/laranyman/aoc/eighteen/dayfourteen/DayFourteen.java
 [18d15c]: src/main/java/com/laranyman/aoc/eighteen/dayfifteen/DayFifteen.java
 [18d16c]: src/main/java/com/laranyman/aoc/eighteen/daysixteen/DaySixteen.java
+[18d17c]: src/main/java/com/laranyman/aoc/eighteen/dayseventeen/DaySeventeen.java
 
 [18d1t]: src/test/java/com/laranyman/aoc/eighteen/dayone/DayOneTest.java
 [18d2t]: src/test/java/com/laranyman/aoc/eighteen/daytwo/DayTwoTest.java
@@ -57,3 +59,4 @@ Advent of Code
 [18d14t]: src/test/java/com/laranyman/aoc/eighteen/dayfourteen/DayFourteenTest.java
 [18d15t]: src/test/java/com/laranyman/aoc/eighteen/dayfifteen/DayFifteenTest.java
 [18d16t]: src/test/java/com/laranyman/aoc/eighteen/daysixteen/DaySixteenTest.java
+[18d17t]: src/test/java/com/laranyman/aoc/eighteen/dayseventeen/DaySeventeenTest.java

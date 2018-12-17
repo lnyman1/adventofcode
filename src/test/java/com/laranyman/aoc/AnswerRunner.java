@@ -4,6 +4,7 @@ import com.google.common.collect.Lists;
 import com.laranyman.aoc.eighteen.dayfifteen.DayFifteen;
 import com.laranyman.aoc.eighteen.dayfour.DayFour;
 import com.laranyman.aoc.eighteen.dayfourteen.DayFourteen;
+import com.laranyman.aoc.eighteen.dayseventeen.DaySeventeen;
 import com.laranyman.aoc.eighteen.daysixteen.DaySixteen;
 import com.laranyman.aoc.eighteen.daythirteen.DayThirteen;
 import org.slf4j.Logger;
@@ -67,8 +68,9 @@ public class AnswerRunner
 //        m_days.put ( new DayTwelve ( ), dayTwelve );
 //        m_days.put ( new DayThirteen ( ), emptyParameters () );
 //        m_days.put ( new DayFourteen ( ), emptyParameters () );
-        m_days.put ( new DayFifteen ( ), dayFifteen );
+//        m_days.put ( new DayFifteen ( ), dayFifteen );
 //        m_days.put ( new DaySixteen ( ), emptyParameters ( ) );
+        m_days.put ( new DaySeventeen ( ), emptyParameters ( ) );
     }
 
     public static void main ( String[] args ) throws IOException

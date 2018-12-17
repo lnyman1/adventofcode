@@ -28,8 +28,6 @@ public class DayFifteen implements DayIfc
 {
     private static final Logger LOGGER = LoggerFactory.getLogger ( DayFifteen.class );
 
-    private static CoordinatorSort s_coordinatorSort = new CoordinatorSort ( );
-
     @Override
     public String partOne ( final String input )
     {
@@ -212,7 +210,7 @@ public class DayFifteen implements DayIfc
         return grid.entrySet ( )
                 .stream ( )
                 .filter ( e -> e.getValue ( ).isFightingBandit ( ) )
-                .sorted ( ( e1, e2 ) -> s_coordinatorSort.compare ( e1.getKey ( ), e2.getKey ( ) ) )
+                .sorted ( ( e1, e2 ) -> e1.getKey ().compare ( e1.getKey ( ), e2.getKey ( ) ) )
                 .collect ( Collectors.toMap ( Map.Entry::getKey, Map.Entry::getValue, ( e1, e2 ) -> e1,
                         LinkedHashMap::new ) );
     }
@@ -451,23 +449,9 @@ public class DayFifteen implements DayIfc
 
         return grid.entrySet ( )
                 .stream ( )
-                .sorted ( ( e1, e2 ) -> s_coordinatorSort.compare ( e1.getKey ( ), e2.getKey ( ) ) )
+                .sorted ( ( e1, e2 ) -> e1.getKey ().compare ( e1.getKey ( ), e2.getKey ( ) ) )
                 .collect ( Collectors.toMap ( Map.Entry::getKey, Map.Entry::getValue, ( e1, e2 ) -> e1,
                         LinkedHashMap::new ) );
-    }
-
-    private static final class CoordinatorSort implements Comparator< Coordinate >
-    {
-        @Override
-        public int compare ( final Coordinate x1, final Coordinate x2 )
-        {
-            int result = Double.compare ( x1.getyCoordinate ( ), x2.getyCoordinate ( ) );
-            if ( result == 0 )
-            {
-                result = Double.compare ( x1.getxCoordinate ( ), x2.getxCoordinate ( ) );
-            }
-            return result;
-        }
     }
 
     private static final class Distance
