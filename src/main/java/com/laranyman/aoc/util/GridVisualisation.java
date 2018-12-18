@@ -109,7 +109,7 @@ public class GridVisualisation
         return image;
     }
 
-    private void write ( final String fileName ) throws IOException
+    public void write ( final String fileName ) throws IOException
     {
         ImageIO.write ( toImage ( ), "gif", new File ( fileName ) );
     }

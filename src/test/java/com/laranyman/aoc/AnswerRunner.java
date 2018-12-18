@@ -1,6 +1,7 @@
 package com.laranyman.aoc;
 
 import com.google.common.collect.Lists;
+import com.laranyman.aoc.eighteen.dayeighteen.DayEighteen;
 import com.laranyman.aoc.eighteen.dayfifteen.DayFifteen;
 import com.laranyman.aoc.eighteen.dayfour.DayFour;
 import com.laranyman.aoc.eighteen.dayfourteen.DayFourteen;
@@ -70,7 +71,8 @@ public class AnswerRunner
 //        m_days.put ( new DayFourteen ( ), emptyParameters () );
 //        m_days.put ( new DayFifteen ( ), dayFifteen );
 //        m_days.put ( new DaySixteen ( ), emptyParameters ( ) );
-        m_days.put ( new DaySeventeen ( ), emptyParameters ( ) );
+//        m_days.put ( new DaySeventeen ( ), emptyParameters ( ) );
+        m_days.put ( new DayEighteen ( ), emptyParameters ( ) );
     }
 
     public static void main ( String[] args ) throws IOException

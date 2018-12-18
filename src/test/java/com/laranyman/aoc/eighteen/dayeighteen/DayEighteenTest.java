@@ -3,6 +3,7 @@ package com.laranyman.aoc.eighteen.dayeighteen;
 import com.laranyman.aoc.template.DayN;
 import org.junit.Test;
 
+import static com.laranyman.aoc.TestUtil.assertEqual;
 import static org.junit.Assert.assertEquals;
 
 /**
@@ -13,16 +14,17 @@ public class DayEighteenTest
     @Test
     public void testPartOneExampleOne ( )
     {
-        String input = "";
-        DayN dayN = new DayN ( );
-        assertEquals ( 0, dayN.partOne ( input ) );
-    }
-
-    @Test
-    public void testPartTwoExampleOne ( )
-    {
-        String input = "";
-        DayN dayN = new DayN ( );
-        assertEquals ( 0, dayN.partTwo ( input ) );
+        String input = ".#.#...|#.\n" +
+                       ".....#|##|\n" +
+                       ".|..|...#.\n" +
+                       "..|#.....#\n" +
+                       "#.#|||#|#|\n" +
+                       "...#.||...\n" +
+                       ".|....|...\n" +
+                       "||...#|.#|\n" +
+                       "|.||||..|.\n" +
+                       "...#.|..|.";
+        DayEighteen dayEighteen = new DayEighteen ( );
+        assertEqual ( 1147, dayEighteen.partOne ( input ) );
     }
 }

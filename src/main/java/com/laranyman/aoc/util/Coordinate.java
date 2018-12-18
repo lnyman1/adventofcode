@@ -43,6 +43,17 @@ public class Coordinate implements Comparator< Coordinate >
         return coordinates;
     }
 
+    public List< Coordinate > getEightNeighbours ( )
+    {
+        List< Coordinate > coordinates = Lists.newArrayList ( );
+        coordinates.addAll ( getNeighbours () );
+        coordinates.add ( new Coordinate ( m_xCoordinate - 1, m_yCoordinate - 1 ) );
+        coordinates.add ( new Coordinate ( m_xCoordinate - 1, m_yCoordinate + 1 ) );
+        coordinates.add ( new Coordinate ( m_xCoordinate + 1, m_yCoordinate - 1 ) );
+        coordinates.add ( new Coordinate ( m_xCoordinate + 1, m_yCoordinate + 1 ) );
+        return coordinates;
+    }
+
     public Coordinate getLeftCoordinate ( )
     {
         return new Coordinate ( m_xCoordinate - 1, m_yCoordinate );
