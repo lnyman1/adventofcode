@@ -2,6 +2,7 @@ package com.laranyman.aoc.eighteen.daynineteen;
 
 import org.junit.Test;
 
+import static com.laranyman.aoc.TestUtil.assertEqual;
 import static org.junit.Assert.assertEquals;
 
 /**
@@ -12,16 +13,15 @@ public class DayNineteenTest
     @Test
     public void testPartOneExampleOne ( )
     {
-        String input = "";
-        DayNineteen dayN = new DayNineteen ( );
-        assertEquals ( 0, dayN.partOne ( input ) );
-    }
+        String input = "seti 5 0 1\n" +
+                       "seti 6 0 2\n" +
+                       "addi 0 1 0\n" +
+                       "addr 1 2 3\n" +
+                       "setr 1 0 0\n" +
+                       "seti 8 0 4\n" +
+                       "seti 9 0 5";
 
-    @Test
-    public void testPartTwoExampleOne ( )
-    {
-        String input = "";
-        DayNineteen dayN = new DayNineteen ( );
-        assertEquals ( 0, dayN.partTwo ( input ) );
+        DayNineteen dayNineteen = new DayNineteen ( );
+        assertEqual ( 6, dayNineteen.partOne ( input, 0 ) );
     }
 }

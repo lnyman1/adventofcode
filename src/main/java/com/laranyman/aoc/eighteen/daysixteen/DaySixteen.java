@@ -3,6 +3,7 @@ package com.laranyman.aoc.eighteen.daysixteen;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import com.laranyman.aoc.DayIfc;
+import com.laranyman.aoc.util.OpCode;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -12,6 +13,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+import static com.laranyman.aoc.util.AdventOfCodeUtil.execute;
 import static com.laranyman.aoc.util.AdventOfCodeUtil.splitInput;
 
 /**
@@ -32,7 +34,7 @@ public class DaySixteen implements DayIfc
         {
             int opCodeCount = 0;
 
-            for ( OpCodes opCode : OpCodes.values ( ) )
+            for ( OpCode opCode : OpCode.values ( ) )
             {
                 final int[] afterRegisterCalc = execute ( opCode, registers.m_instruction, registers.m_before );
 
@@ -74,13 +76,13 @@ public class DaySixteen implements DayIfc
                     .mapToInt ( Integer::parseInt ).toArray ( ) );
         }
 
-        Map< Integer, List< OpCodes > > maps = Maps.newHashMap ( );
+        Map< Integer, List< OpCode > > maps = Maps.newHashMap ( );
 
         for ( Registers registers : exampleRegisters )
         {
-            List< OpCodes > possibleOpcodes = Lists.newArrayList ( );
+            List< OpCode > possibleOpcodes = Lists.newArrayList ( );
 
-            for ( OpCodes opCode : OpCodes.values ( ) )
+            for ( OpCode opCode : OpCode.values ( ) )
             {
                 final int[] afterRegisterCalc = execute ( opCode, registers.m_instruction, registers.m_before );
 
@@ -90,7 +92,7 @@ public class DaySixteen implements DayIfc
                 }
             }
 
-            final List< OpCodes > entry = maps.get ( registers.m_instruction[ 0 ] );
+            final List< OpCode > entry = maps.get ( registers.m_instruction[ 0 ] );
 
             if ( entry != null )
             {
@@ -116,16 +118,16 @@ public class DaySixteen implements DayIfc
                 break;
             }
 
-            final List< OpCodes > knownOpCodes = maps.entrySet ( )
+            final List< OpCode > knownOpCodes = maps.entrySet ( )
                     .stream ( )
                     .map ( Map.Entry::getValue )
                     .filter ( e -> e.size ( ) == 1 )
                     .flatMap ( Collection::stream )
                     .collect ( Collectors.toList ( ) );
 
-            for ( Map.Entry< Integer, List< OpCodes > > entry : maps.entrySet ( ) )
+            for ( Map.Entry< Integer, List< OpCode > > entry : maps.entrySet ( ) )
             {
-                final List< OpCodes > codes = entry.getValue ( );
+                final List< OpCode > codes = entry.getValue ( );
 
                 if ( codes.size ( ) > 1 )
                 {
@@ -144,72 +146,6 @@ public class DaySixteen implements DayIfc
         }
 
         return String.valueOf ( register[ 0 ] );
-    }
-
-
-    private static int[] execute (
-            final OpCodes opCode,
-            final int[] instructions,
-            final int[] beforeRegister )
-    {
-        final int a = instructions[ 1 ];
-        final int b = instructions[ 2 ];
-        final int c = instructions[ 3 ];
-
-        final int[] afterRegister = Arrays.copyOf ( beforeRegister, beforeRegister.length );
-
-        switch ( opCode )
-        {
-            case addr:
-                afterRegister[ c ] = beforeRegister[ a ] + beforeRegister[ b ];
-                break;
-            case addi:
-                afterRegister[ c ] = beforeRegister[ a ] + b;
-                break;
-            case mulr:
-                afterRegister[ c ] = beforeRegister[ a ] * beforeRegister[ b ];
-                break;
-            case muli:
-                afterRegister[ c ] = beforeRegister[ a ] * b;
-                break;
-            case banr:
-                afterRegister[ c ] = beforeRegister[ a ] & beforeRegister[ b ];
-                break;
-            case bani:
-                afterRegister[ c ] = beforeRegister[ a ] & b;
-                break;
-            case borr:
-                afterRegister[ c ] = beforeRegister[ a ] | beforeRegister[ b ];
-                break;
-            case bori:
-                afterRegister[ c ] = beforeRegister[ a ] | b;
-                break;
-            case setr:
-                afterRegister[ c ] = beforeRegister[ a ];
-                break;
-            case seti:
-                afterRegister[ c ] = a;
-                break;
-            case gtir:
-                afterRegister[ c ] = a > beforeRegister[ b ] ? 1 : 0;
-                break;
-            case gtri:
-                afterRegister[ c ] = beforeRegister[ a ] > b ? 1 : 0;
-                break;
-            case gtrr:
-                afterRegister[ c ] = beforeRegister[ a ] > beforeRegister[ b ] ? 1 : 0;
-                break;
-            case eqir:
-                afterRegister[ c ] = a == beforeRegister[ b ] ? 1 : 0;
-                break;
-            case eqri:
-                afterRegister[ c ] = beforeRegister[ a ] == b ? 1 : 0;
-                break;
-            case eqrr:
-                afterRegister[ c ] = beforeRegister[ a ] == beforeRegister[ b ] ? 1 : 0;
-                break;
-        }
-        return afterRegister;
     }
 
     private static int[] parseRegister ( final String line )
@@ -253,26 +189,6 @@ public class DaySixteen implements DayIfc
         }
 
         return registers;
-    }
-
-    private enum OpCodes
-    {
-        addr,
-        addi,
-        mulr,
-        muli,
-        banr,
-        bani,
-        borr,
-        bori,
-        setr,
-        seti,
-        gtir,
-        gtri,
-        gtrr,
-        eqir,
-        eqri,
-        eqrr
     }
 
     private static final class Registers

@@ -3,6 +3,7 @@ package com.laranyman.aoc.util;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -92,4 +93,68 @@ public final class AdventOfCodeUtil
         return;
     }
 
+    public static int[] execute (
+            final OpCode opCode,
+            final int[] instructions,
+            final int[] beforeRegister )
+    {
+        final int a = instructions[ 1 ];
+        final int b = instructions[ 2 ];
+        final int c = instructions[ 3 ];
+
+        final int[] afterRegister = Arrays.copyOf ( beforeRegister, beforeRegister.length );
+
+        switch ( opCode )
+        {
+            case addr:
+                afterRegister[ c ] = beforeRegister[ a ] + beforeRegister[ b ];
+                break;
+            case addi:
+                afterRegister[ c ] = beforeRegister[ a ] + b;
+                break;
+            case mulr:
+                afterRegister[ c ] = beforeRegister[ a ] * beforeRegister[ b ];
+                break;
+            case muli:
+                afterRegister[ c ] = beforeRegister[ a ] * b;
+                break;
+            case banr:
+                afterRegister[ c ] = beforeRegister[ a ] & beforeRegister[ b ];
+                break;
+            case bani:
+                afterRegister[ c ] = beforeRegister[ a ] & b;
+                break;
+            case borr:
+                afterRegister[ c ] = beforeRegister[ a ] | beforeRegister[ b ];
+                break;
+            case bori:
+                afterRegister[ c ] = beforeRegister[ a ] | b;
+                break;
+            case setr:
+                afterRegister[ c ] = beforeRegister[ a ];
+                break;
+            case seti:
+                afterRegister[ c ] = a;
+                break;
+            case gtir:
+                afterRegister[ c ] = a > beforeRegister[ b ] ? 1 : 0;
+                break;
+            case gtri:
+                afterRegister[ c ] = beforeRegister[ a ] > b ? 1 : 0;
+                break;
+            case gtrr:
+                afterRegister[ c ] = beforeRegister[ a ] > beforeRegister[ b ] ? 1 : 0;
+                break;
+            case eqir:
+                afterRegister[ c ] = a == beforeRegister[ b ] ? 1 : 0;
+                break;
+            case eqri:
+                afterRegister[ c ] = beforeRegister[ a ] == b ? 1 : 0;
+                break;
+            case eqrr:
+                afterRegister[ c ] = beforeRegister[ a ] == beforeRegister[ b ] ? 1 : 0;
+                break;
+        }
+        return afterRegister;
+    }
 }

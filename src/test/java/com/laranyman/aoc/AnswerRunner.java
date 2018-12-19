@@ -5,6 +5,7 @@ import com.laranyman.aoc.eighteen.dayeighteen.DayEighteen;
 import com.laranyman.aoc.eighteen.dayfifteen.DayFifteen;
 import com.laranyman.aoc.eighteen.dayfour.DayFour;
 import com.laranyman.aoc.eighteen.dayfourteen.DayFourteen;
+import com.laranyman.aoc.eighteen.daynineteen.DayNineteen;
 import com.laranyman.aoc.eighteen.dayseventeen.DaySeventeen;
 import com.laranyman.aoc.eighteen.daysixteen.DaySixteen;
 import com.laranyman.aoc.eighteen.daythirteen.DayThirteen;
@@ -42,7 +43,7 @@ public class AnswerRunner
         daySix.add ( 1, new long[] { 10000 } );
 
         List< long[] > daySeven = emptyParameters ( );
-        daySix.add ( 1, new long[] { 5, 60 } );
+        daySeven.add ( 1, new long[] { 5, 60 } );
 
         List< long[] > dayNine = Lists.newArrayList ( );
         dayNine.add ( new long[] { 459, 71790 } );
@@ -54,6 +55,10 @@ public class AnswerRunner
 
         List< long[] > dayFifteen = emptyParameters ( );
         dayFifteen.add ( 1, new long[] { 15 } );
+
+        List< long[] > dayNineteen = Lists.newArrayList ( );
+        dayNineteen.add ( new long[] { 5 } );
+        dayNineteen.add ( new long[] { 5 } );
 
 //        m_days.put ( new DayOne ( ), emptyParameters ( ) );
 //        m_days.put ( new DayTwo ( ), emptyParameters ( ) );
@@ -72,7 +77,8 @@ public class AnswerRunner
 //        m_days.put ( new DayFifteen ( ), dayFifteen );
 //        m_days.put ( new DaySixteen ( ), emptyParameters ( ) );
 //        m_days.put ( new DaySeventeen ( ), emptyParameters ( ) );
-        m_days.put ( new DayEighteen ( ), emptyParameters ( ) );
+//        m_days.put ( new DayEighteen ( ), emptyParameters ( ) );
+        m_days.put ( new DayNineteen ( ), dayNineteen );
     }
 
     public static void main ( String[] args ) throws IOException
