@@ -64,4 +64,5 @@ Advent of Code
 [18d15t]: src/test/java/com/laranyman/aoc/eighteen/dayfifteen/DayFifteenTest.java
 [18d16t]: src/test/java/com/laranyman/aoc/eighteen/daysixteen/DaySixteenTest.java
 [18d17t]: src/test/java/com/laranyman/aoc/eighteen/dayseventeen/DaySeventeenTest.java
+[18d18t]: src/test/java/com/laranyman/aoc/eighteen/dayeighteen/DayEighteenTest.java
 [18d19t]: src/test/java/com/laranyman/aoc/eighteen/daynineteen/DayNineteenTest.java
