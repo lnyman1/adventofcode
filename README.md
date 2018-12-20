@@ -26,6 +26,7 @@ Advent of Code
 *   **Day 17** - Reservoir Research :           *([code][18d17c])* *([tests][18d17t])*
 *   **Day 18** - Settlers of The North Pole :   *([code][18d18c])* *([tests][18d18t])*
 *   **Day 19** - Go With The Flow :             *([code][18d19c])* *([tests][18d19t])*
+*   **Day 20** - A Regular Map :                *([code][18d20c])* *([tests][18d20t])*
 
 [18d1c]: src/main/java/com/laranyman/aoc/eighteen/dayone/DayOne.java
 [18d2c]: src/main/java/com/laranyman/aoc/eighteen/daytwo/DayTwo.java
@@ -46,6 +47,7 @@ Advent of Code
 [18d17c]: src/main/java/com/laranyman/aoc/eighteen/dayseventeen/DaySeventeen.java
 [18d18c]: src/main/java/com/laranyman/aoc/eighteen/dayeighteen/DayEighteen.java
 [18d19c]: src/main/java/com/laranyman/aoc/eighteen/daynineteen/DayNineteen.java
+[18d20c]: src/main/java/com/laranyman/aoc/eighteen/daytwenty/DayTwenty.java
 
 [18d1t]: src/test/java/com/laranyman/aoc/eighteen/dayone/DayOneTest.java
 [18d2t]: src/test/java/com/laranyman/aoc/eighteen/daytwo/DayTwoTest.java
@@ -66,3 +68,4 @@ Advent of Code
 [18d17t]: src/test/java/com/laranyman/aoc/eighteen/dayseventeen/DaySeventeenTest.java
 [18d18t]: src/test/java/com/laranyman/aoc/eighteen/dayeighteen/DayEighteenTest.java
 [18d19t]: src/test/java/com/laranyman/aoc/eighteen/daynineteen/DayNineteenTest.java
+[18d20t]: src/test/java/com/laranyman/aoc/eighteen/daytwenty/DayTwentyTest.java
