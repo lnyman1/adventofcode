@@ -10,6 +10,7 @@ import com.laranyman.aoc.eighteen.dayseventeen.DaySeventeen;
 import com.laranyman.aoc.eighteen.daysixteen.DaySixteen;
 import com.laranyman.aoc.eighteen.daythirteen.DayThirteen;
 import com.laranyman.aoc.eighteen.daytwenty.DayTwenty;
+import com.laranyman.aoc.eighteen.daytwentyone.DayTwentyOne;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -61,6 +62,10 @@ public class AnswerRunner
         dayNineteen.add ( new long[] { 5 } );
         dayNineteen.add ( new long[] { 5 } );
 
+        List< long[] > dayTwentyOne = Lists.newArrayList ( );
+        dayTwentyOne.add ( new long[] { 2 } );
+        dayTwentyOne.add ( new long[] { 2 } );
+
 //        m_days.put ( new DayOne ( ), emptyParameters ( ) );
 //        m_days.put ( new DayTwo ( ), emptyParameters ( ) );
 //        m_days.put ( new DayThree ( ), emptyParameters ( ) );
@@ -80,7 +85,8 @@ public class AnswerRunner
 //        m_days.put ( new DaySeventeen ( ), emptyParameters ( ) );
 //        m_days.put ( new DayEighteen ( ), emptyParameters ( ) );
 //        m_days.put ( new DayNineteen ( ), dayNineteen );
-        m_days.put ( new DayTwenty ( ), emptyParameters ( ) );
+//        m_days.put ( new DayTwenty ( ), emptyParameters ( ) );
+        m_days.put ( new DayTwentyOne ( ), dayTwentyOne );
     }
 
     public static void main ( String[] args ) throws IOException
