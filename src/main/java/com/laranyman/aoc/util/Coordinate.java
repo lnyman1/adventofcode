@@ -46,7 +46,7 @@ public class Coordinate implements Comparator< Coordinate >
     public List< Coordinate > getEightNeighbours ( )
     {
         List< Coordinate > coordinates = Lists.newArrayList ( );
-        coordinates.addAll ( getNeighbours () );
+        coordinates.addAll ( getNeighbours ( ) );
         coordinates.add ( new Coordinate ( m_xCoordinate - 1, m_yCoordinate - 1 ) );
         coordinates.add ( new Coordinate ( m_xCoordinate - 1, m_yCoordinate + 1 ) );
         coordinates.add ( new Coordinate ( m_xCoordinate + 1, m_yCoordinate - 1 ) );
@@ -72,6 +72,14 @@ public class Coordinate implements Comparator< Coordinate >
     public Coordinate getDownCoordinate ( )
     {
         return new Coordinate ( m_xCoordinate, m_yCoordinate + 1 );
+    }
+
+    public boolean isInGridBoundaries ( final Coordinate lowerCoords, final Coordinate higherCoords )
+    {
+        return m_xCoordinate < lowerCoords.getxCoordinate ( )
+               || m_yCoordinate < lowerCoords.getyCoordinate ( )
+               || m_xCoordinate > higherCoords.getxCoordinate ( )
+               || m_yCoordinate > higherCoords.getyCoordinate ( );
     }
 
     @Override

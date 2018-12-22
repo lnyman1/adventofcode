@@ -28,6 +28,7 @@ Advent of Code
 *   **Day 19** - Go With The Flow :             *([code][18d19c])* *([tests][18d19t])*
 *   **Day 20** - A Regular Map :                *([code][18d20c])* *([tests][18d20t])*
 *   **Day 21** - Chronal Conversion :           *([code][18d21c])* *([tests][18d21t])*
+*   **Day 22** - Mode Maze :                    *([code][18d22c])* *([tests][18d22t])*
 
 [18d1c]: src/main/java/com/laranyman/aoc/eighteen/dayone/DayOne.java
 [18d2c]: src/main/java/com/laranyman/aoc/eighteen/daytwo/DayTwo.java
@@ -50,6 +51,7 @@ Advent of Code
 [18d19c]: src/main/java/com/laranyman/aoc/eighteen/daynineteen/DayNineteen.java
 [18d20c]: src/main/java/com/laranyman/aoc/eighteen/daytwenty/DayTwenty.java
 [18d21c]: src/main/java/com/laranyman/aoc/eighteen/daytwentyone/DayTwentyOne.java
+[18d22c]: src/main/java/com/laranyman/aoc/eighteen/daytwentytwo/DayTwentyTwo.java
 
 [18d1t]: src/test/java/com/laranyman/aoc/eighteen/dayone/DayOneTest.java
 [18d2t]: src/test/java/com/laranyman/aoc/eighteen/daytwo/DayTwoTest.java
@@ -72,3 +74,4 @@ Advent of Code
 [18d19t]: src/test/java/com/laranyman/aoc/eighteen/daynineteen/DayNineteenTest.java
 [18d20t]: src/test/java/com/laranyman/aoc/eighteen/daytwenty/DayTwentyTest.java
 [18d21t]: src/test/java/com/laranyman/aoc/eighteen/daytwentyone/DayTwentyOneTest.java
+[18d22t]: src/test/java/com/laranyman/aoc/eighteen/daytwentytwo/DayTwentyTwoTest.java
