@@ -10,7 +10,9 @@ import com.laranyman.aoc.eighteen.dayseventeen.DaySeventeen;
 import com.laranyman.aoc.eighteen.daysixteen.DaySixteen;
 import com.laranyman.aoc.eighteen.daythirteen.DayThirteen;
 import com.laranyman.aoc.eighteen.daytwenty.DayTwenty;
+import com.laranyman.aoc.eighteen.daytwentyfour.DayTwentyFour;
 import com.laranyman.aoc.eighteen.daytwentyone.DayTwentyOne;
+import com.laranyman.aoc.eighteen.daytwentythree.DayTwentyThree;
 import com.laranyman.aoc.eighteen.daytwentytwo.DayTwentyTwo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -88,7 +90,9 @@ public class AnswerRunner
 //        m_days.put ( new DayNineteen ( ), dayNineteen );
 //        m_days.put ( new DayTwenty ( ), emptyParameters ( ) );
 //        m_days.put ( new DayTwentyOne ( ), dayTwentyOne );
-        m_days.put ( new DayTwentyTwo ( ), emptyParameters ( ) );
+//        m_days.put ( new DayTwentyTwo ( ), emptyParameters ( ) );
+        m_days.put ( new DayTwentyThree ( ), emptyParameters ( ) );
+//        m_days.put ( new DayTwentyFour ( ), emptyParameters ( ) );
     }
 
     public static void main ( String[] args ) throws IOException

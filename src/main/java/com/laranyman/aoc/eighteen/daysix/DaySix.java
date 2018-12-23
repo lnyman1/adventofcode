@@ -11,6 +11,7 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
+import static com.laranyman.aoc.util.AdventOfCodeUtil.calculateManhattenDistance;
 import static com.laranyman.aoc.util.AdventOfCodeUtil.splitInput;
 
 /**
@@ -175,16 +176,6 @@ public class DaySix implements DayIfc
         }
 
         return String.valueOf ( region );
-    }
-
-
-    private static int calculateManhattenDistance (
-            final int x,
-            final int y,
-            final Coordinate coordinate )
-    {
-        return Math.abs ( x - coordinate.getxCoordinate ( ) )
-               + Math.abs ( y - coordinate.getyCoordinate ( ) );
     }
 
     private static Coordinate[] parseInput ( final String input )

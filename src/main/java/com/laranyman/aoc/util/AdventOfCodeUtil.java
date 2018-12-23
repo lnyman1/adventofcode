@@ -60,7 +60,7 @@ public final class AdventOfCodeUtil
         }
     }
 
-    public static <T> void rotate (
+    public static < T > void rotate (
             final LinkedList< T > list,
             final int number )
     {
@@ -156,5 +156,14 @@ public final class AdventOfCodeUtil
                 break;
         }
         return afterRegister;
+    }
+
+    public static int calculateManhattenDistance (
+            final int x,
+            final int y,
+            final Coordinate coordinate )
+    {
+        return Math.abs ( x - coordinate.getxCoordinate ( ) )
+               + Math.abs ( y - coordinate.getyCoordinate ( ) );
     }
 }
