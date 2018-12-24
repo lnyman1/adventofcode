@@ -91,8 +91,8 @@ public class AnswerRunner
 //        m_days.put ( new DayTwenty ( ), emptyParameters ( ) );
 //        m_days.put ( new DayTwentyOne ( ), dayTwentyOne );
 //        m_days.put ( new DayTwentyTwo ( ), emptyParameters ( ) );
-        m_days.put ( new DayTwentyThree ( ), emptyParameters ( ) );
-//        m_days.put ( new DayTwentyFour ( ), emptyParameters ( ) );
+//        m_days.put ( new DayTwentyThree ( ), emptyParameters ( ) );
+        m_days.put ( new DayTwentyFour ( ), emptyParameters ( ) );
     }
 
     public static void main ( String[] args ) throws IOException
