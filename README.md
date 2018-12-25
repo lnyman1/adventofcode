@@ -31,6 +31,7 @@ Solutions
 *   **Day 22** - Mode Maze :                    *([code][18d22c])* *([tests][18d22t])*
 *   **Day 23** - Experimental Emergency Teleportation : *([code][18d23c])* *([tests][18d23t])*
 *   **Day 24** - Immune System Simulator 20XX : *([code][18d24c])* *([tests][18d24t])*
+*   **Day 25** - Four-Dimensional Adventure :   *([code][18d25c])* *([tests][18d25t])*
 
 [18d1c]: src/main/java/com/laranyman/aoc/eighteen/dayone/DayOne.java
 [18d2c]: src/main/java/com/laranyman/aoc/eighteen/daytwo/DayTwo.java
@@ -56,6 +57,7 @@ Solutions
 [18d22c]: src/main/java/com/laranyman/aoc/eighteen/daytwentytwo/DayTwentyTwo.java
 [18d23c]: src/main/java/com/laranyman/aoc/eighteen/daytwentythree/DayTwentyThree.java
 [18d24c]: src/main/java/com/laranyman/aoc/eighteen/daytwentyfour/DayTwentyFour.java
+[18d25c]: src/main/java/com/laranyman/aoc/eighteen/daytwentyfive/DayTwentyFive.java
 
 [18d1t]: src/test/java/com/laranyman/aoc/eighteen/dayone/DayOneTest.java
 [18d2t]: src/test/java/com/laranyman/aoc/eighteen/daytwo/DayTwoTest.java
@@ -81,5 +83,6 @@ Solutions
 [18d22t]: src/test/java/com/laranyman/aoc/eighteen/daytwentytwo/DayTwentyTwoTest.java
 [18d23t]: src/test/java/com/laranyman/aoc/eighteen/daytwentythree/DayTwentyThreeTest.java
 [18d24t]: src/test/java/com/laranyman/aoc/eighteen/daytwentyfour/DayTwentyFourTest.java
+[18d25t]: src/test/java/com/laranyman/aoc/eighteen/daytwentyfive/DayTwentyFiveTest.java
 
 </details>
