@@ -5,7 +5,7 @@ Advent of Code
 
 Solutions
 ---------
-<details><summary>2018</summary>
+<details><summary>2018 (Java)</summary>
 
 *   **Day 1** - Chronal Calibration :           *([code][18d1c])* *([tests][18d1t])*
 *   **Day 2** - Inventory Management System :   *([code][18d2c])* *([tests][18d2t])*
@@ -87,7 +87,7 @@ Solutions
 
 </details>
 
-<details><summary>2019</summary>
+<details><summary>2019 (Python)</summary>
 
 An example of how to run solutions:
 
