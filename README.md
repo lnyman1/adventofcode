@@ -33,56 +33,70 @@ Solutions
 *   **Day 24** - Immune System Simulator 20XX : *([code][18d24c])* *([tests][18d24t])*
 *   **Day 25** - Four-Dimensional Adventure :   *([code][18d25c])* *([tests][18d25t])*
 
-[18d1c]: src/main/java/com/laranyman/aoc/eighteen/dayone/DayOne.java
-[18d2c]: src/main/java/com/laranyman/aoc/eighteen/daytwo/DayTwo.java
-[18d3c]: src/main/java/com/laranyman/aoc/eighteen/daythree/DayThree.java
-[18d4c]: src/main/java/com/laranyman/aoc/eighteen/dayfour/DayFour.java
-[18d5c]: src/main/java/com/laranyman/aoc/eighteen/dayfive/DayFive.java
-[18d6c]: src/main/java/com/laranyman/aoc/eighteen/daysix/DaySix.java
-[18d7c]: src/main/java/com/laranyman/aoc/eighteen/dayseven/DaySeven.java
-[18d8c]: src/main/java/com/laranyman/aoc/eighteen/dayeight/DayEight.java
-[18d9c]: src/main/java/com/laranyman/aoc/eighteen/daynine/DayNine.java
-[18d10c]: src/main/java/com/laranyman/aoc/eighteen/dayten/DayTen.java
-[18d11c]: src/main/java/com/laranyman/aoc/eighteen/dayeleven/DayEleven.java
-[18d12c]: src/main/java/com/laranyman/aoc/eighteen/daytwelve/DayTwelve.java
-[18d13c]: src/main/java/com/laranyman/aoc/eighteen/daythirteen/DayThirteen.java
-[18d14c]: src/main/java/com/laranyman/aoc/eighteen/dayfourteen/DayFourteen.java
-[18d15c]: src/main/java/com/laranyman/aoc/eighteen/dayfifteen/DayFifteen.java
-[18d16c]: src/main/java/com/laranyman/aoc/eighteen/daysixteen/DaySixteen.java
-[18d17c]: src/main/java/com/laranyman/aoc/eighteen/dayseventeen/DaySeventeen.java
-[18d18c]: src/main/java/com/laranyman/aoc/eighteen/dayeighteen/DayEighteen.java
-[18d19c]: src/main/java/com/laranyman/aoc/eighteen/daynineteen/DayNineteen.java
-[18d20c]: src/main/java/com/laranyman/aoc/eighteen/daytwenty/DayTwenty.java
-[18d21c]: src/main/java/com/laranyman/aoc/eighteen/daytwentyone/DayTwentyOne.java
-[18d22c]: src/main/java/com/laranyman/aoc/eighteen/daytwentytwo/DayTwentyTwo.java
-[18d23c]: src/main/java/com/laranyman/aoc/eighteen/daytwentythree/DayTwentyThree.java
-[18d24c]: src/main/java/com/laranyman/aoc/eighteen/daytwentyfour/DayTwentyFour.java
-[18d25c]: src/main/java/com/laranyman/aoc/eighteen/daytwentyfive/DayTwentyFive.java
+[18d1c]: javasolutions/src/main/java/com/laranyman/aoc/eighteen/dayone/DayOne.java
+[18d2c]: javasolutions/src/main/java/com/laranyman/aoc/eighteen/daytwo/DayTwo.java
+[18d3c]: javasolutions/src/main/java/com/laranyman/aoc/eighteen/daythree/DayThree.java
+[18d4c]: javasolutions/src/main/java/com/laranyman/aoc/eighteen/dayfour/DayFour.java
+[18d5c]: javasolutions/src/main/java/com/laranyman/aoc/eighteen/dayfive/DayFive.java
+[18d6c]: javasolutions/src/main/java/com/laranyman/aoc/eighteen/daysix/DaySix.java
+[18d7c]: javasolutions/src/main/java/com/laranyman/aoc/eighteen/dayseven/DaySeven.java
+[18d8c]: javasolutions/src/main/java/com/laranyman/aoc/eighteen/dayeight/DayEight.java
+[18d9c]: javasolutions/src/main/java/com/laranyman/aoc/eighteen/daynine/DayNine.java
+[18d10c]: javasolutions/src/main/java/com/laranyman/aoc/eighteen/dayten/DayTen.java
+[18d11c]: javasolutions/src/main/java/com/laranyman/aoc/eighteen/dayeleven/DayEleven.java
+[18d12c]: javasolutions/src/main/java/com/laranyman/aoc/eighteen/daytwelve/DayTwelve.java
+[18d13c]: javasolutions/src/main/java/com/laranyman/aoc/eighteen/daythirteen/DayThirteen.java
+[18d14c]: javasolutions/src/main/java/com/laranyman/aoc/eighteen/dayfourteen/DayFourteen.java
+[18d15c]: javasolutions/src/main/java/com/laranyman/aoc/eighteen/dayfifteen/DayFifteen.java
+[18d16c]: javasolutions/src/main/java/com/laranyman/aoc/eighteen/daysixteen/DaySixteen.java
+[18d17c]: javasolutions/src/main/java/com/laranyman/aoc/eighteen/dayseventeen/DaySeventeen.java
+[18d18c]: javasolutions/src/main/java/com/laranyman/aoc/eighteen/dayeighteen/DayEighteen.java
+[18d19c]: javasolutions/src/main/java/com/laranyman/aoc/eighteen/daynineteen/DayNineteen.java
+[18d20c]: javasolutions/src/main/java/com/laranyman/aoc/eighteen/daytwenty/DayTwenty.java
+[18d21c]: javasolutions/src/main/java/com/laranyman/aoc/eighteen/daytwentyone/DayTwentyOne.java
+[18d22c]: javasolutions/src/main/java/com/laranyman/aoc/eighteen/daytwentytwo/DayTwentyTwo.java
+[18d23c]: javasolutions/src/main/java/com/laranyman/aoc/eighteen/daytwentythree/DayTwentyThree.java
+[18d24c]: javasolutions/src/main/java/com/laranyman/aoc/eighteen/daytwentyfour/DayTwentyFour.java
+[18d25c]: javasolutions/src/main/java/com/laranyman/aoc/eighteen/daytwentyfive/DayTwentyFive.java
 
-[18d1t]: src/test/java/com/laranyman/aoc/eighteen/dayone/DayOneTest.java
-[18d2t]: src/test/java/com/laranyman/aoc/eighteen/daytwo/DayTwoTest.java
-[18d3t]: src/test/java/com/laranyman/aoc/eighteen/daythree/DayThreeTest.java
-[18d4t]: src/test/java/com/laranyman/aoc/eighteen/dayfour/DayFourTest.java
-[18d5t]: src/test/java/com/laranyman/aoc/eighteen/dayfive/DayFiveTest.java
-[18d6t]: src/test/java/com/laranyman/aoc/eighteen/daysix/DaySixTest.java
-[18d7t]: src/test/java/com/laranyman/aoc/eighteen/dayseven/DaySevenTest.java
-[18d8t]: src/test/java/com/laranyman/aoc/eighteen/dayeight/DayEightTest.java
-[18d9t]: src/test/java/com/laranyman/aoc/eighteen/daynine/DayNineTest.java
-[18d10t]: src/test/java/com/laranyman/aoc/eighteen/dayten/DayTenTest.java
-[18d11t]: src/test/java/com/laranyman/aoc/eighteen/dayeleven/DayElevenTest.java
-[18d12t]: src/test/java/com/laranyman/aoc/eighteen/daytwelve/DayTwelveTest.java
-[18d13t]: src/test/java/com/laranyman/aoc/eighteen/daythirteen/DayThirteenTest.java
-[18d14t]: src/test/java/com/laranyman/aoc/eighteen/dayfourteen/DayFourteenTest.java
-[18d15t]: src/test/java/com/laranyman/aoc/eighteen/dayfifteen/DayFifteenTest.java
-[18d16t]: src/test/java/com/laranyman/aoc/eighteen/daysixteen/DaySixteenTest.java
-[18d17t]: src/test/java/com/laranyman/aoc/eighteen/dayseventeen/DaySeventeenTest.java
-[18d18t]: src/test/java/com/laranyman/aoc/eighteen/dayeighteen/DayEighteenTest.java
-[18d19t]: src/test/java/com/laranyman/aoc/eighteen/daynineteen/DayNineteenTest.java
-[18d20t]: src/test/java/com/laranyman/aoc/eighteen/daytwenty/DayTwentyTest.java
-[18d21t]: src/test/java/com/laranyman/aoc/eighteen/daytwentyone/DayTwentyOneTest.java
-[18d22t]: src/test/java/com/laranyman/aoc/eighteen/daytwentytwo/DayTwentyTwoTest.java
-[18d23t]: src/test/java/com/laranyman/aoc/eighteen/daytwentythree/DayTwentyThreeTest.java
-[18d24t]: src/test/java/com/laranyman/aoc/eighteen/daytwentyfour/DayTwentyFourTest.java
-[18d25t]: src/test/java/com/laranyman/aoc/eighteen/daytwentyfive/DayTwentyFiveTest.java
+[18d1t]: javasolutions/src/test/java/com/laranyman/aoc/eighteen/dayone/DayOneTest.java
+[18d2t]: javasolutions/src/test/java/com/laranyman/aoc/eighteen/daytwo/DayTwoTest.java
+[18d3t]: javasolutions/src/test/java/com/laranyman/aoc/eighteen/daythree/DayThreeTest.java
+[18d4t]: javasolutions/src/test/java/com/laranyman/aoc/eighteen/dayfour/DayFourTest.java
+[18d5t]: javasolutions/src/test/java/com/laranyman/aoc/eighteen/dayfive/DayFiveTest.java
+[18d6t]: javasolutions/src/test/java/com/laranyman/aoc/eighteen/daysix/DaySixTest.java
+[18d7t]: javasolutions/src/test/java/com/laranyman/aoc/eighteen/dayseven/DaySevenTest.java
+[18d8t]: javasolutions/src/test/java/com/laranyman/aoc/eighteen/dayeight/DayEightTest.java
+[18d9t]: javasolutions/src/test/java/com/laranyman/aoc/eighteen/daynine/DayNineTest.java
+[18d10t]: javasolutions/src/test/java/com/laranyman/aoc/eighteen/dayten/DayTenTest.java
+[18d11t]: javasolutions/src/test/java/com/laranyman/aoc/eighteen/dayeleven/DayElevenTest.java
+[18d12t]: javasolutions/src/test/java/com/laranyman/aoc/eighteen/daytwelve/DayTwelveTest.java
+[18d13t]: javasolutions/src/test/java/com/laranyman/aoc/eighteen/daythirteen/DayThirteenTest.java
+[18d14t]: javasolutions/src/test/java/com/laranyman/aoc/eighteen/dayfourteen/DayFourteenTest.java
+[18d15t]: javasolutions/src/test/java/com/laranyman/aoc/eighteen/dayfifteen/DayFifteenTest.java
+[18d16t]: javasolutions/src/test/java/com/laranyman/aoc/eighteen/daysixteen/DaySixteenTest.java
+[18d17t]: javasolutions/src/test/java/com/laranyman/aoc/eighteen/dayseventeen/DaySeventeenTest.java
+[18d18t]: javasolutions/src/test/java/com/laranyman/aoc/eighteen/dayeighteen/DayEighteenTest.java
+[18d19t]: javasolutions/src/test/java/com/laranyman/aoc/eighteen/daynineteen/DayNineteenTest.java
+[18d20t]: javasolutions/src/test/java/com/laranyman/aoc/eighteen/daytwenty/DayTwentyTest.java
+[18d21t]: javasolutions/src/test/java/com/laranyman/aoc/eighteen/daytwentyone/DayTwentyOneTest.java
+[18d22t]: javasolutions/src/test/java/com/laranyman/aoc/eighteen/daytwentytwo/DayTwentyTwoTest.java
+[18d23t]: javasolutions/src/test/java/com/laranyman/aoc/eighteen/daytwentythree/DayTwentyThreeTest.java
+[18d24t]: javasolutions/src/test/java/com/laranyman/aoc/eighteen/daytwentyfour/DayTwentyFourTest.java
+[18d25t]: javasolutions/src/test/java/com/laranyman/aoc/eighteen/daytwentyfive/DayTwentyFiveTest.java
+
+</details>
+
+<details><summary>2019</summary>
+
+An example of how to run solutions:
+
+~~~ 
+python3 DayOne.py DayOne.txt
+~~~ 
+
+*   **Day 1** - TBC :           *([code][19d1c])*
+
+[19d1c]: pythonsolutions/com/laranyman/aoc/nineteen/dayone/DayOne.py
 
 </details>
