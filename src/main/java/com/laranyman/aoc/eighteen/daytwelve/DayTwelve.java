@@ -107,7 +107,7 @@ public class DayTwelve implements DayIfc
         {
             final String seqToCheck = extendedSequencePost.substring ( i - 2, i + 3 );
 
-            newState.setCharAt ( i, notes.getOrDefault ( seqToCheck, "." ).charAt ( 0 ) );
+            newState.setCharAt ( i, notes.getOrDefault ( seqToCheck, "src/test/java" ).charAt ( 0 ) );
         }
 
         return new Pots ( addedPre + currentPot.m_negativeIndices, newState.toString ( ) );
@@ -123,7 +123,7 @@ public class DayTwelve implements DayIfc
 
             if ( seq.contains ( "#" ) )
             {
-                endSeq = "." + seqOfCurrentPot;
+                endSeq = "src/test/java" + seqOfCurrentPot;
                 return checkEdgeCasePre ( endSeq );
             }
 
@@ -144,7 +144,7 @@ public class DayTwelve implements DayIfc
 
         if ( seq.contains ( "#" ) )
         {
-            endSeq = seqOfCurrentPot + ".";
+            endSeq = seqOfCurrentPot + "src/test/java";
             return checkEdgeCasePost ( endSeq );
         }
 

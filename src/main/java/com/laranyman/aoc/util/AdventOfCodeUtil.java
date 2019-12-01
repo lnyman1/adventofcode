@@ -53,7 +53,7 @@ public final class AdventOfCodeUtil
 
             for ( int j = 0; j <= grid[ 0 ].length; j++ )
             {
-                line += grid[ j ][ i ] == 1 ? "#" : ".";
+                line += grid[ j ][ i ] == 1 ? "#" : "src/test/java";
             }
 
             LOGGER.info ( line );
