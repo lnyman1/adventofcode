@@ -92,10 +92,10 @@ Solutions
 An example of how to run solutions:
 
 ~~~ 
-python3 DayOne.py DayOne.txt
+python3 DayOne.py DayOneInput.txt
 ~~~ 
 
-*   **Day 1** - TBC :           *([code][19d1c])*
+*   **Day 1** - The Tyranny of the Rocket Equation :           *([code][19d1c])*
 
 [19d1c]: pythonsolutions/com/laranyman/aoc/nineteen/dayone/DayOne.py
 
